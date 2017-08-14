@@ -1,0 +1,55 @@
+﻿table {
+	margin: 0.5em;
+}
+
+caption {
+	font-size: larger;
+	text-align: left;
+	margin-bottom: 0.25em;
+}
+
+thead {
+	background-color: #8CAFB4;
+}
+
+	thead tr:last-child th {
+		border-bottom: solid 1px #66747B;
+	}
+
+tbody tr:nth-child(even) {
+	background-color: #E0E2E4;
+}
+
+tbody tr:last-child td {
+	border-bottom: solid 1px #66747B;
+}
+
+th[data-sort-direction] {
+	cursor: pointer;
+}
+
+	th[data-sort-direction]:hover {
+		background: #E8E8E8;
+	}
+
+	th[data-sort-direction] span {
+		background-image: url("../Images/Sorting Arrows.png");
+		background-repeat: no-repeat;
+		display: inline-block;
+		height: 14px;
+		width: 14px;
+		margin-bottom: -2px;
+	}
+
+th[data-sort-direction= "-1"] span {
+	background-position: 0 0;
+}
+
+th[data-sort-direction= "1"] span {
+	background-position: -32px 0;
+}
+
+
+th[data-sort-direction= "0"] span {
+	background-position: -16px -16px;
+}
